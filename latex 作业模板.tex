@@ -1,0 +1,75 @@
+\documentclass[a4paper,12pt]{article}
+\setlength{\headheight}{13.59999pt}
+\addtolength{\topmargin}{-1.59999pt}
+
+%% 注释 CTRL+K+C; 取消注释 CTRL+K+U
+% 设置压缩等级�?0, 加快编译速度
+\special{dvipdfmx:config z 0}
+
+\usepackage[english]{babel} % 文档�?言为英�?
+\usepackage[T1]{fontenc} % 输出 T1 字�?�集，以�?持�?��??言扩展
+\usepackage{geometry} %设置页边�?
+\geometry{a4paper,left=2.33cm,right=2.33cm,top=2.36cm,bottom=1.73cm}
+
+\usepackage{xcolor}
+\usepackage{listings}
+
+\usepackage{times}
+\usepackage{fontspec} % 导入 fontspec �?
+\setmainfont{Times New Roman} % 设置主�?�字体为 Times New Roman
+% \setmonofont{Consolas}
+% \newfontfamily\Consolas{Consolas} % �?定义 Consolas 字体
+% \newfontfamily\Arial{Arial}
+
+\usepackage{graphicx}
+\usepackage{subfig} %子图
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{pdfpages} %用于插入pdf
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{amsmath} %插入�?�?
+\usepackage{amssymb}
+\usepackage{tabularx} %用于插入表格
+\usepackage{indentfirst} %首�?�缩�?
+\usepackage{setspace} %调整行间�?
+\usepackage{titlesec} %四级标�?�paragraph后面换�??
+\usepackage{bm}      % 提供加粗数�?�公式支�?
+\usepackage{enumitem}
+\usepackage{hyperref} %插入超链�?
+
+%% �?改图片标题的字号，使得所有图片标题的字号变为小一号。这里需要使用到caption�?
+\captionsetup[figure]{font={small}}
+
+\titleformat{\paragraph}[hang]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\linespread{1.15} %设置行间距倍数 1.3�?
+\setlength{\parindent}{2em} %首�?�缩�?2字�??
+\setlength{\jot}{10pt}
+
+%%加入页眉
+\usepackage{fancyhdr}
+\pagestyle{fancy} %命令将页面样式�?�置�? fancy，以便使�? fancyhdr 定制页眉和页�?
+\fancyhead[L]{\small\textcolor{gray}{EE3628 Control Systems}} %设置页眉内�??
+\fancyhead[R]{\small\textcolor{gray}{Assignment}}
+
+\begin{document}
+
+% \includepdf[pages={1}]{cover.pdf}
+% \setcounter{page}{1}
+
+\section{Introduction}
+\subsection{Aim}
+\subsection{Objectives}
+
+\section{Section 1}
+
+
+\section{Section 2}
+\section{Discussions and Conclusion}
+\begin{thebibliography}{10}
+    % 使用 GB/T 7714�?2015 引用格式
+    %\bibitem{}
+\end{thebibliography}
+
+\end{document}
